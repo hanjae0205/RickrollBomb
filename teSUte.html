@@ -1,0 +1,21 @@
+<head><title>Sans</title><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script></head>
+<body id="body">
+<input type="text" id="x" onchange='a()'/><input type="text" id="y" onchange='a()'/>
+    <button id="bt" onclick="sans()" style="height: 48px;width: 60px;">생성</button>
+    <div id="sans"></div>
+  </body>
+  
+  <script>
+    function a() {
+      var x = document.getElementById('x').value;
+      var y = document.getElementById('y').value;
+    };
+    function sans() {
+      for (var i = 0; i < 10; i++) {
+        for (var q = 0; q < 10; q++) {
+          $('#sans').append('<video style="height: 48px;width: 60px;" autoplay="" name="media" loop=""><source src="https://shattereddisk.github.io/rickroll/rickroll.mp4" type="video/mp4"></video>');
+        };
+        $('#sans').append('<br>')
+      };
+    };
+  </script>
